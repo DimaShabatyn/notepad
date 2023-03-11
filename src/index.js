@@ -14,3 +14,9 @@
  * прибрати завдання зі списку.
  * Список із завданнями має бути доступним після перезавантаження сторінки.
  */
+import fetchapi from './js/fetch-api';
+fetchapi.getData();
+
+console.log(fetchapi.addData({ name: 'note1', textContent: 'options'}));
+console.log(fetchapi.deleteData(5));
+console.log(fetchapi.getData());
